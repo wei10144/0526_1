@@ -39,12 +39,7 @@ function draw() {
   if (predictions.length > 0) {
     const keypoints = predictions[0].scaledMesh;
 
-    // 在第94點畫紅色圓
-    const [x94, y94] = keypoints[94];
-    noFill();
-    stroke(255, 0, 0);
-    strokeWeight(4);
-    ellipse(x94, y94, 100, 100);
+    
 
     // 根據手勢改變藍色圓圈的位置
     if (currentGesture === "scissors") {
